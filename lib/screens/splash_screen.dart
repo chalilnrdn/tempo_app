@@ -41,7 +41,7 @@ class _SplashViewState extends State<SplashView>
 
     // Navigate to home after 3 seconds
     Future.delayed(Duration(seconds: 3), () {
-      // Get.offAllNamed(Routes.HOME);
+      // Get.offAllNamed(Routes);
     });
   }
 
@@ -74,7 +74,7 @@ class _SplashViewState extends State<SplashView>
                         borderRadius: BorderRadius.circular(20),
                         boxShadow: [
                           BoxShadow(
-                            color: Colors.black.withOpacity(0.2),
+                            color: Colors.black.withValues(alpha: 0.2),
                             blurRadius: 20,
                             offset: Offset(0, 10),
                           ),
@@ -101,7 +101,7 @@ class _SplashViewState extends State<SplashView>
                       'Stay Updated with Latest News',
                       style: TextStyle(
                         fontSize: 16,
-                        color: Colors.white.withOpacity(0.8),
+                        color: Colors.white.withValues(alpha: 0.8),
                       ),
                     ),
                     SizedBox(height: 50),
