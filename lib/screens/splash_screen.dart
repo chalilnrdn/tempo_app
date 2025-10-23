@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:tempo_app/routes/app_pages.dart';
 import 'package:tempo_app/utils/app_colors.dart';
 
 class SplashView extends StatefulWidget {
@@ -41,7 +42,7 @@ class _SplashViewState extends State<SplashView>
 
     // Navigate to home after 3 seconds
     Future.delayed(Duration(seconds: 3), () {
-      // Get.offAllNamed(Routes);
+      Get.offAllNamed(Routes.HOME);
     });
   }
 

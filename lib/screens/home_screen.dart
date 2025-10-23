@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:tempo_app/controllers/news_controller.dart';
+import 'package:tempo_app/routes/app_pages.dart';
 import 'package:tempo_app/utils/app_colors.dart';
 import 'package:tempo_app/widgets/category_chip.dart';
 import 'package:tempo_app/widgets/loading_shimmer.dart';
@@ -67,7 +68,7 @@ class HomeScreen extends GetView<NewsController> {
                     return NewsCard(
                       article: article,
                       onTap: () => Get.toNamed(
-                        // Routes.NEWS_DETAIL,
+                        Routes.NEWS_DETAIL,
                         arguments: article,
                       ),
                     );
